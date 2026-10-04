@@ -1,0 +1,23 @@
+[package]
+name = "portolan"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.74"
+description = "A fast, dependency-free TCP port scanner and service mapper for hosts you are authorized to test."
+license = "MIT"
+authors = ["Resul Çetin"]
+repository = "https://github.com/resulcetin09/portolan"
+readme = "README.md"
+keywords = ["security", "network", "port-scanner", "recon", "sysadmin"]
+categories = ["command-line-utilities", "network-programming"]
+
+[[bin]]
+name = "portolan"
+path = "src/main.rs"
+
+[dependencies]
+
+[profile.release]
+opt-level = 3
+lto = true
+strip = true

@@ -1,0 +1,35 @@
+<svg width="560" height="160" viewBox="0 0 560 160" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="portolan">
+  <defs>
+    <linearGradient id="p" x1="0" y1="0" x2="112" y2="112" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#0891b2"/>
+    </linearGradient>
+  </defs>
+  <rect width="560" height="160" rx="24" fill="#0b1120"/>
+
+  <!-- compass rose with rhumb lines, like a portolan chart -->
+  <g transform="translate(84 80)">
+    <!-- rhumb lines radiating out -->
+    <g stroke="#164e63" stroke-width="1.2">
+      <line x1="-50" y1="0" x2="50" y2="0"/>
+      <line x1="0" y1="-50" x2="0" y2="50"/>
+      <line x1="-35" y1="-35" x2="35" y2="35"/>
+      <line x1="-35" y1="35" x2="35" y2="-35"/>
+      <line x1="-46" y1="-19" x2="46" y2="19"/>
+      <line x1="-46" y1="19" x2="46" y2="-19"/>
+      <line x1="-19" y1="-46" x2="19" y2="46"/>
+      <line x1="-19" y1="46" x2="19" y2="-46"/>
+    </g>
+    <circle r="50" fill="none" stroke="#1e3a52" stroke-width="1.5"/>
+    <circle r="33" fill="none" stroke="#164e63" stroke-width="1"/>
+    <!-- four-point star (compass needle) -->
+    <path d="M0 -46 L9 -9 L46 0 L9 9 L0 46 L-9 9 L-46 0 L-9 -9 Z" fill="url(#p)"/>
+    <path d="M0 -46 L9 -9 L0 0 L-9 -9 Z" fill="#67e8f9"/>
+    <circle r="4.5" fill="#0b1120"/>
+    <!-- a found port, marked -->
+    <circle cx="46" cy="19" r="4.5" fill="#22d3ee"/>
+  </g>
+
+  <text x="168" y="88" font-family="'JetBrains Mono','SF Mono',monospace" font-size="52" font-weight="700" fill="#f1f5f9" letter-spacing="0.5">portolan</text>
+  <text x="170" y="120" font-family="'JetBrains Mono','SF Mono',monospace" font-size="16" font-weight="400" fill="#64748b" letter-spacing="0.3">chart the open ports on your network</text>
+</svg>
